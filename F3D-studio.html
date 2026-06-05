@@ -1,0 +1,3361 @@
+
+
+```html
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3DPrint СПб - Профессиональная 3D-печать в Санкт-Петербурге</title>
+    
+    <!-- Мета-теги для SEO -->
+    <meta name="description" content="Профессиональная 3D-печать в Санкт-Петербурге. Высококачественная печать любой сложности на PLA, ABS, PETG, нейлоне, TPU. Быстро, качественно, по доступным ценам.">
+    <meta name="keywords" content="3D печать Санкт-Петербург, 3D принтер, 3D моделирование, печать пластиком, прототипирование, PLA, ABS, PETG, нейлон, TPU, заказать 3D печать">
+    <meta name="author" content="3DPrint СПб">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph для соцсетей -->
+    <meta property="og:title" content="3DPrint СПб - Профессиональная 3D-печать в Санкт-Петербурге">
+    <meta property="og:description" content="Высококачественная 3D-печать любой сложности. Быстро, качественно и по доступным ценам.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80">
+    <meta property="og:url" content="https://3dprint-spb.ru">
+    
+    <!-- Фавиконки -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🖨️</text></svg>">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🖨️</text></svg>">
+    
+    <!-- Schema.org микроразметка (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "3DPrint СПб",
+        "description": "Профессиональная 3D-печать в Санкт-Петербурге",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "ул. Автовская, 17",
+            "addressLocality": "Санкт-Петербург",
+            "addressCountry": "RU"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "59.934280",
+            "longitude": "30.335099"
+        },
+        "telephone": "+7 (995) 236-85-91",
+        "email": "fedoseev.kirill12@mail.ru",
+        "openingHours": [
+            "Mo-Fr 09:00-21:00",
+            "Sa 10:00-23:00",
+            "Su 11:00-21:00"
+        ],
+        "priceRange": "₽₽",
+        "image": "https://images.unsplash.com/photo-1581094794329-c8112a89af12",
+        "url": "https://3dprint-spb.ru",
+        "sameAs": [
+            "https://t.me/pechatnikk"
+        ]
+    }
+    </script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Виджет чата (tawk.to) -->
+    <script>
+        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+        (function(){
+            var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+            s1.async=true;
+            s1.src='https://embed.tawk.to/67a0b123da6e0b7e2c1a1234/1i4ap3v7i';
+            s1.charset='UTF-8';
+            s1.setAttribute('crossorigin','*');
+            s0.parentNode.insertBefore(s1,s0);
+        })();
+    </script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            /* Modern Apple Color Palette */
+            --color-primary: #0071e3;
+            --color-primary-hover: #0077ED;
+            --color-secondary: #5856d6;
+            --color-accent: #ff2d55;
+            --color-success: #34c759;
+            --color-warning: #ff9500;
+            --color-dark: #1d1d1f;
+            --color-light: #f5f5f7;
+            --color-gray-1: #86868b;
+            --color-gray-2: #a1a1a6;
+            --color-gray-3: #d2d2d7;
+            --color-bg-light: #ffffff;
+            --color-bg-dark: #000000;
+            
+            /* Material Colors */
+            --color-pla: #34c759;
+            --color-abs: #ff9500;
+            --color-petg: #0071e3;
+            --color-nylon: #5856d6;
+            --color-tpu: #ff2d55;
+        }
+        
+        body {
+            color: var(--color-dark);
+            line-height: 1.47059;
+            font-weight: 400;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background-color: var(--color-bg-light);
+            -webkit-font-smoothing: antialiased;
+            overflow-x: hidden;
+            transition: background-color 0.5s, color 0.5s;
+        }
+        
+        body.dark-theme {
+            color: var(--color-light);
+            background-color: var(--color-bg-dark);
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 22px;
+        }
+        
+        /* Главный контент */
+        main {
+            padding-top: 52px;
+        }
+        
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(40px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        @keyframes fadeInLeft {
+            from { opacity: 0; transform: translateX(-40px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        
+        @keyframes fadeInRight {
+            from { opacity: 0; transform: translateX(40px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        
+        @keyframes shimmer {
+            0% { background-position: -200% center; }
+            100% { background-position: 200% center; }
+        }
+        
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        @keyframes slideInFromBottom {
+            from { transform: translateY(100px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        
+        @keyframes borderGlow {
+            0%, 100% { box-shadow: 0 0 5px rgba(0, 113, 227, 0.5); }
+            50% { box-shadow: 0 0 20px rgba(0, 113, 227, 0.8), 0 0 30px rgba(0, 113, 227, 0.6); }
+        }
+        
+        /* Header - Apple Style */
+        header {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: saturate(180%) blur(20px);
+            -webkit-backdrop-filter: saturate(180%) blur(20px);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            height: 52px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            animation: slideInFromBottom 0.8s ease-out;
+        }
+        
+        .dark-theme header {
+            background: rgba(0, 0, 0, 0.8);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            animation: fadeInLeft 1s ease-out;
+        }
+        
+        .logo-icon {
+            font-size: 1.8rem;
+            color: var(--color-primary);
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        .logo-text h1 {
+            font-size: 21px;
+            font-weight: 600;
+            letter-spacing: -0.5px;
+            background: linear-gradient(135deg, var(--color-dark) 0%, var(--color-secondary) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .dark-theme .logo-text h1 {
+            background: linear-gradient(135deg, var(--color-light) 0%, var(--color-secondary) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 32px;
+            animation: fadeInRight 1s ease-out;
+        }
+        
+        nav a {
+            color: var(--color-dark);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 14px;
+            opacity: 0.8;
+            transition: all 0.3s;
+            padding: 5px 0;
+            position: relative;
+        }
+        
+        nav a:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background: var(--color-primary);
+            bottom: 0;
+            left: 0;
+            transition: width 0.3s ease;
+        }
+        
+        nav a:hover:after {
+            width: 100%;
+        }
+        
+        nav a:hover {
+            opacity: 1;
+            color: var(--color-primary);
+        }
+        
+        .dark-theme nav a {
+            color: var(--color-light);
+        }
+        
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--color-dark);
+            font-size: 1.5rem;
+            cursor: pointer;
+            animation: fadeInRight 1s ease-out;
+        }
+        
+        .dark-theme .mobile-menu-btn {
+            color: var(--color-light);
+        }
+        
+        /* Hero Section - Enhanced with Gradient */
+        .hero {
+            background: linear-gradient(135deg, 
+                rgba(245, 245, 247, 0.95) 0%, 
+                rgba(232, 245, 255, 0.9) 100%),
+                url('https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80') center/cover no-repeat;
+            padding: 180px 0 120px;
+            margin-bottom: 0;
+            text-align: center;
+            position: relative;
+        }
+        
+        .hero:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, 
+                rgba(26, 35, 126, 0.3) 0%, 
+                rgba(57, 73, 171, 0.3) 25%, 
+                rgba(0, 188, 212, 0.3) 50%, 
+                rgba(76, 175, 80, 0.3) 75%, 
+                rgba(26, 35, 126, 0.3) 100%);
+            background-size: 400% 400%;
+            animation: gradientShift 15s ease infinite;
+            z-index: 1;
+        }
+        
+        .dark-theme .hero {
+            background: linear-gradient(135deg, 
+                rgba(0, 0, 0, 0.9) 0%, 
+                rgba(26, 26, 28, 0.9) 100%),
+                url('https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80') center/cover no-repeat;
+        }
+        
+        .hero .container {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .hero h2 {
+            font-size: 56px;
+            font-weight: 700;
+            letter-spacing: -1.5px;
+            margin-bottom: 24px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+            animation: fadeInUp 1s ease-out 0.3s both;
+            background: linear-gradient(135deg, var(--color-dark) 0%, var(--color-secondary) 50%, var(--color-primary) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .dark-theme .hero h2 {
+            background: linear-gradient(135deg, var(--color-light) 0%, var(--color-secondary) 50%, var(--color-primary) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .hero p {
+            font-size: 28px;
+            font-weight: 400;
+            color: var(--color-gray-1);
+            max-width: 680px;
+            margin: 0 auto 48px;
+            line-height: 1.28577;
+            animation: fadeInUp 1s ease-out 0.6s both;
+        }
+        
+        .dark-theme .hero p {
+            color: var(--color-gray-2);
+        }
+        
+        .hero-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            animation: fadeInUp 1s ease-out 0.9s both;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+            color: white;
+            padding: 14px 32px;
+            font-size: 17px;
+            font-weight: 500;
+            text-decoration: none;
+            border-radius: 12px;
+            transition: all 0.3s;
+            border: none;
+            box-shadow: 0 4px 15px rgba(0, 113, 227, 0.2);
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+            cursor: pointer;
+        }
+        
+        .cta-button:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: left 0.5s;
+            z-index: -1;
+        }
+        
+        .cta-button:hover:before {
+            left: 100%;
+        }
+        
+        .cta-button:hover {
+            background: linear-gradient(135deg, var(--color-secondary) 0%, var(--color-primary) 100%);
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 8px 25px rgba(0, 113, 227, 0.3);
+        }
+        
+        .telegram-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #0088cc 0%, #0077b3 100%);
+            color: white;
+            padding: 14px 32px;
+            font-size: 17px;
+            font-weight: 500;
+            text-decoration: none;
+            border-radius: 12px;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(0, 136, 204, 0.2);
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+        
+        .telegram-button:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: left 0.5s;
+            z-index: -1;
+        }
+        
+        .telegram-button:hover:before {
+            left: 100%;
+        }
+        
+        .telegram-button:hover {
+            background: linear-gradient(135deg, #0077b3 0%, #0088cc 100%);
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 8px 25px rgba(0, 136, 204, 0.3);
+        }
+        
+        .telegram-button i {
+            margin-right: 8px;
+            animation: float 2s ease-in-out infinite;
+        }
+        
+        /* Section Titles - Enhanced */
+        .section-title {
+            text-align: center;
+            margin-bottom: 80px;
+        }
+        
+        .section-title h2 {
+            font-size: 48px;
+            font-weight: 700;
+            letter-spacing: -1px;
+            color: var(--color-dark);
+            position: relative;
+            display: inline-block;
+            padding-bottom: 15px;
+            animation: fadeInUp 1s ease-out;
+        }
+        
+        .section-title h2:after {
+            content: '';
+            position: absolute;
+            width: 70px;
+            height: 4px;
+            background: var(--color-primary);
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            animation: borderGlow 2s infinite;
+        }
+        
+        .dark-theme .section-title h2 {
+            color: var(--color-light);
+        }
+        
+        .section-title p {
+            font-size: 24px;
+            color: var(--color-gray-1);
+            margin-top: 30px;
+            font-weight: 400;
+            animation: fadeInUp 1s ease-out 0.2s both;
+        }
+        
+        .dark-theme .section-title p {
+            color: var(--color-gray-2);
+        }
+        
+        /* Animated elements */
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+        
+        .animate-on-scroll.animated {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* Services Section - Three Cards per Row */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-bottom: 100px;
+        }
+        
+        .service-card {
+            background: var(--color-bg-light);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            border: 1px solid var(--color-gray-3);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            animation: fadeInUp 0.8s ease-out;
+            transform-style: preserve-3d;
+            perspective: 1000px;
+        }
+        
+        .dark-theme .service-card {
+            background: var(--color-dark);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-15px) rotateX(5deg) rotateY(5deg);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+        
+        .dark-theme .service-card:hover {
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+        }
+        
+        .service-icon {
+            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+            color: white;
+            font-size: 2.8rem;
+            padding: 40px;
+            text-align: center;
+            transition: all 0.5s;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .service-icon:after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(255,255,255,0.1), transparent);
+            transform: rotate(45deg);
+            transition: transform 0.5s;
+        }
+        
+        .service-icon:hover:after {
+            transform: rotate(45deg) translate(50%, 50%);
+        }
+        
+        .service-icon:hover {
+            background: linear-gradient(135deg, var(--color-secondary) 0%, var(--color-primary) 100%);
+            transform: scale(1.05);
+        }
+        
+        .service-content {
+            padding: 30px;
+            transform: translateZ(30px);
+        }
+        
+        .service-content h3 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: var(--color-dark);
+            cursor: pointer;
+            transition: all 0.3s;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .dark-theme .service-content h3 {
+            color: var(--color-light);
+        }
+        
+        .service-content h3:hover {
+            color: var(--color-primary);
+        }
+        
+        .service-content p {
+            color: var(--color-gray-1);
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        
+        .dark-theme .service-content p {
+            color: var(--color-gray-2);
+        }
+        
+        /* Кнопка "Узнать цену" */
+        .price-button {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 500;
+            margin-top: 15px;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+            box-shadow: 0 4px 12px rgba(0, 113, 227, 0.2);
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+        
+        .price-button:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: left 0.5s;
+            z-index: -1;
+        }
+        
+        .price-button:hover:before {
+            left: 100%;
+        }
+        
+        .price-button:hover {
+            background: linear-gradient(135deg, var(--color-secondary) 0%, var(--color-primary) 100%);
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 6px 20px rgba(0, 113, 227, 0.3);
+        }
+        
+        /* Comparison Table - Enhanced */
+        .comparison-section {
+            padding: 100px 0;
+            margin-bottom: 80px;
+        }
+        
+        .comparison-table-container {
+            overflow-x: auto;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            border: 1px solid var(--color-gray-3);
+            animation: fadeInUp 1s ease-out;
+            background: var(--color-bg-light);
+        }
+        
+        .dark-theme .comparison-table-container {
+            background: var(--color-dark);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+        
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 1000px;
+        }
+        
+        .comparison-table th,
+        .comparison-table td {
+            padding: 20px;
+            text-align: center;
+            border-bottom: 1px solid var(--color-gray-3);
+            transition: all 0.3s;
+        }
+        
+        .dark-theme .comparison-table th,
+        .dark-theme .comparison-table td {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .comparison-table th {
+            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+            color: white;
+            font-weight: 600;
+            font-size: 14px;
+            position: sticky;
+            top: 0;
+            animation: fadeInUp 0.8s ease-out;
+        }
+        
+        .comparison-table tr {
+            animation: fadeIn 0.5s ease-out;
+        }
+        
+        .comparison-table tr:nth-child(1) { animation-delay: 0.1s; }
+        .comparison-table tr:nth-child(2) { animation-delay: 0.2s; }
+        .comparison-table tr:nth-child(3) { animation-delay: 0.3s; }
+        .comparison-table tr:nth-child(4) { animation-delay: 0.4s; }
+        .comparison-table tr:nth-child(5) { animation-delay: 0.5s; }
+        .comparison-table tr:nth-child(6) { animation-delay: 0.6s; }
+        
+        .comparison-table tr:hover {
+            background: rgba(0, 113, 227, 0.05);
+            transform: translateX(5px);
+        }
+        
+        .dark-theme .comparison-table tr:hover {
+            background: rgba(255, 255, 255, 0.05);
+        }
+        
+        /* Material-specific colors */
+        .material-pla { color: var(--color-pla); font-weight: 600; }
+        .material-abs { color: var(--color-abs); font-weight: 600; }
+        .material-petg { color: var(--color-petg); font-weight: 600; }
+        .material-nylon { color: var(--color-nylon); font-weight: 600; }
+        .material-tpu { color: var(--color-tpu); font-weight: 600; }
+        
+        .best-choice {
+            background: linear-gradient(135deg, rgba(52, 199, 89, 0.1) 0%, rgba(52, 199, 89, 0.05) 100%) !important;
+            border-left: 4px solid var(--color-success);
+            animation: pulse 3s infinite;
+        }
+        
+        .dark-theme .best-choice {
+            background: linear-gradient(135deg, rgba(52, 199, 89, 0.2) 0%, rgba(52, 199, 89, 0.1) 100%) !important;
+            border-left: 4px solid var(--color-success);
+        }
+        
+        /* Price Modal */
+        .price-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(10px);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 2001;
+            opacity: 0;
+            transition: opacity 0.3s;
+            animation: fadeIn 0.3s ease-out;
+        }
+        
+        .price-modal.active {
+            display: flex;
+            opacity: 1;
+        }
+        
+        .price-modal-content {
+            background: var(--color-bg-light);
+            border-radius: 15px;
+            width: 90%;
+            max-width: 500px;
+            max-height: 90vh;
+            overflow-y: auto;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+            transform: scale(0.9) translateY(50px);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        
+        .dark-theme .price-modal-content {
+            background: var(--color-dark);
+        }
+        
+        .price-modal.active .price-modal-content {
+            transform: scale(1) translateY(0);
+        }
+        
+        .price-header {
+            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 15px 15px 0 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .price-header:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--color-primary), var(--color-success), var(--color-primary));
+            background-size: 200% 100%;
+            animation: shimmer 2s infinite linear;
+        }
+        
+        .price-header h3 {
+            font-size: 1.5rem;
+            margin: 0;
+        }
+        
+        .close-price {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+            transition: all 0.3s;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .close-price:hover {
+            transform: scale(1.2) rotate(90deg);
+            background: rgba(255,255,255,0.1);
+        }
+        
+        .price-body {
+            padding: 25px;
+        }
+        
+        .dark-theme .price-body {
+            color: var(--color-light);
+        }
+        
+        .price-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid var(--color-gray-3);
+            animation: fadeIn 0.5s ease-out;
+        }
+        
+        .price-item:nth-child(1) { animation-delay: 0.1s; }
+        .price-item:nth-child(2) { animation-delay: 0.2s; }
+        .price-item:nth-child(3) { animation-delay: 0.3s; }
+        .price-item:nth-child(4) { animation-delay: 0.4s; }
+        .price-item:nth-child(5) { animation-delay: 0.5s; }
+        
+        .dark-theme .price-item {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .price-value {
+            font-weight: bold;
+            color: var(--color-primary);
+            font-size: 1.2rem;
+            animation: pulse 2s infinite;
+        }
+        
+        .dark-theme .price-value {
+            color: var(--color-accent);
+        }
+        
+        /* About Section */
+        .about {
+            padding: 100px 0;
+            margin-bottom: 80px;
+        }
+        
+        .about-content {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+        }
+        
+        .about-text {
+            flex: 1;
+            animation: fadeInLeft 1s ease-out;
+        }
+        
+        .about-text h2 {
+            color: var(--color-dark);
+            margin-bottom: 20px;
+            font-size: 2.2rem;
+        }
+        
+        .dark-theme .about-text h2 {
+            color: var(--color-light);
+        }
+        
+        .about-text p {
+            color: var(--color-gray-1);
+            margin-bottom: 15px;
+            animation: fadeIn 0.8s ease-out;
+        }
+        
+        .about-text p:nth-child(2) { animation-delay: 0.2s; }
+        .about-text p:nth-child(3) { animation-delay: 0.4s; }
+        .about-text p:nth-child(4) { animation-delay: 0.6s; }
+        
+        .dark-theme .about-text p {
+            color: var(--color-gray-2);
+        }
+        
+        .about-image {
+            flex: 1;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            animation: fadeInRight 1s ease-out;
+            transform-style: preserve-3d;
+            perspective: 1000px;
+        }
+        
+        .about-image:hover {
+            animation: rotate3D 0.5s ease-out forwards;
+        }
+        
+        @keyframes rotate3D {
+            from { transform: perspective(1000px) rotateX(0) rotateY(0); }
+            to { transform: perspective(1000px) rotateX(10deg) rotateY(10deg); }
+        }
+        
+        .about-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.5s;
+        }
+        
+        .about-image:hover img {
+            transform: scale(1.05);
+        }
+        
+        /* Materials Section - Enhanced with Colors */
+        .materials {
+            margin-bottom: 100px;
+        }
+        
+        .materials-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 25px;
+        }
+        
+        .material-card {
+            background: var(--color-bg-light);
+            padding: 30px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            border: 2px solid transparent;
+            transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            cursor: pointer;
+            animation: fadeInUp 0.8s ease-out;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .material-card:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(26, 35, 126, 0.1) 0%, rgba(0, 188, 212, 0.1) 100%);
+            opacity: 0;
+            transition: opacity 0.3s;
+            z-index: 0;
+        }
+        
+        .material-card:hover:before {
+            opacity: 1;
+        }
+        
+        .dark-theme .material-card {
+            background: var(--color-dark);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+        
+        .material-card:hover {
+            transform: translateY(-10px) scale(1.05);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        }
+        
+        .dark-theme .material-card:hover {
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+        }
+        
+        /* Color coding for materials */
+        .material-card[onclick*="pla"] { --material-color: var(--color-pla); }
+        .material-card[onclick*="abs"] { --material-color: var(--color-abs); }
+        .material-card[onclick*="petg"] { --material-color: var(--color-petg); }
+        .material-card[onclick*="nylon"] { --material-color: var(--color-nylon); }
+        .material-card[onclick*="tpu"] { --material-color: var(--color-tpu); }
+        
+        .material-icon {
+            font-size: 48px;
+            color: var(--material-color);
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 1;
+            transition: all 0.3s;
+        }
+        
+        .material-card:hover .material-icon {
+            transform: scale(1.2) rotate(15deg);
+            color: var(--material-color);
+        }
+        
+        .material-card h3 {
+            color: var(--color-dark);
+            margin-bottom: 15px;
+            font-size: 20px;
+            font-weight: 600;
+            position: relative;
+            z-index: 1;
+            transition: color 0.3s;
+        }
+        
+        .material-card:hover h3 {
+            color: var(--material-color);
+        }
+        
+        .dark-theme .material-card h3 {
+            color: var(--color-light);
+        }
+        
+        .material-card p {
+            color: var(--color-gray-1);
+            line-height: 1.5;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .dark-theme .material-card p {
+            color: var(--color-gray-2);
+        }
+        
+        /* Modal Overlay */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(10px);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 2000;
+            opacity: 0;
+            transition: opacity 0.3s;
+            animation: fadeIn 0.3s ease-out;
+            padding: 20px;
+        }
+        
+        .modal-overlay.active {
+            display: flex;
+            opacity: 1;
+        }
+        
+        .material-modal {
+            background: var(--color-bg-light);
+            border-radius: 24px;
+            width: 90%;
+            max-width: 600px;
+            max-height: 90vh;
+            overflow-y: auto;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+            transform: scale(0.9) translateY(50px);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        
+        .dark-theme .material-modal {
+            background: var(--color-dark);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .modal-overlay.active .material-modal {
+            transform: scale(1) translateY(0);
+        }
+        
+        .modal-header {
+            background: linear-gradient(135deg, var(--material-color) 0%, var(--material-color-dark) 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 15px 15px 0 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .modal-header:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--material-color), var(--material-color-dark), var(--material-color));
+            background-size: 200% 100%;
+            animation: shimmer 2s infinite linear;
+        }
+        
+        .modal-header h3 {
+            font-size: 1.5rem;
+            margin: 0;
+        }
+        
+        .close-modal {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+            transition: all 0.3s;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .close-modal:hover {
+            transform: scale(1.2) rotate(90deg);
+            background: rgba(255,255,255,0.1);
+        }
+        
+        .modal-content {
+            padding: 25px;
+        }
+        
+        .dark-theme .modal-content {
+            color: var(--color-light);
+        }
+        
+        .modal-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.5s;
+            animation: fadeIn 0.8s ease-out;
+        }
+        
+        .modal-image:hover {
+            transform: scale(1.02);
+        }
+        
+        .modal-description {
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            color: var(--color-gray-1);
+            animation: fadeIn 0.8s ease-out 0.2s both;
+        }
+        
+        .dark-theme .modal-description {
+            color: var(--color-gray-2);
+        }
+        
+        /* Contact Section - Enhanced with Configurator */
+        .contact {
+            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+            padding: 100px 0;
+            margin-bottom: 80px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .contact:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.1;
+            animation: gradientShift 20s ease infinite;
+        }
+        
+        .contact-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 60px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .contact-info h3, .contact-form h3 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 30px;
+            color: white;
+            animation: fadeInUp 1s ease-out;
+        }
+        
+        .contact-details {
+            margin-top: 40px;
+        }
+        
+        .contact-detail {
+            display: flex;
+            align-items: center;
+            margin-bottom: 25px;
+            gap: 20px;
+            animation: fadeInLeft 0.8s ease-out;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 12px;
+            backdrop-filter: blur(10px);
+            transition: all 0.3s;
+        }
+        
+        .contact-detail:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateX(10px);
+        }
+        
+        .contact-detail:nth-child(1) { animation-delay: 0.2s; }
+        .contact-detail:nth-child(2) { animation-delay: 0.4s; }
+        .contact-detail:nth-child(3) { animation-delay: 0.6s; }
+        .contact-detail:nth-child(4) { animation-delay: 0.8s; }
+        
+        .contact-detail i {
+            font-size: 24px;
+            color: white;
+            width: 50px;
+            height: 50px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s;
+        }
+        
+        .contact-detail:hover i {
+            transform: scale(1.2) rotate(15deg);
+            background: white;
+            color: var(--color-primary);
+        }
+        
+        /* Стиль для кликабельных элементов контактов */
+        .contact-link {
+            color: white;
+            text-decoration: none;
+            display: block;
+            transition: all 0.3s;
+        }
+        
+        .contact-link:hover {
+            color: var(--color-accent);
+            transform: translateY(-2px);
+        }
+        
+        /* Стили для конфигуратора */
+        .configurator-container {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            color: var(--color-dark);
+            animation: fadeInUp 1s ease-out;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+        }
+        
+        .dark-theme .configurator-container {
+            background: var(--color-dark);
+            color: var(--color-light);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .configurator-container h4 {
+            font-size: 24px;
+            margin-bottom: 25px;
+            color: var(--color-primary);
+            text-align: center;
+        }
+        
+        .configurator-grid {
+            display: grid;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .configurator-item {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        
+        .configurator-item label {
+            font-weight: 600;
+            font-size: 14px;
+            color: var(--color-gray-1);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .configurator-item label i {
+            color: var(--color-primary);
+        }
+        
+        .configurator-item select,
+        .configurator-item input {
+            padding: 12px 15px;
+            border: 2px solid var(--color-gray-3);
+            border-radius: 10px;
+            font-size: 15px;
+            transition: all 0.3s;
+            background: var(--color-bg-light);
+            color: var(--color-dark);
+        }
+        
+        .dark-theme .configurator-item select,
+        .dark-theme .configurator-item input {
+            background: rgba(255, 255, 255, 0.05);
+            border-color: rgba(255, 255, 255, 0.1);
+            color: var(--color-light);
+        }
+        
+        .configurator-item select:focus,
+        .configurator-item input:focus {
+            border-color: var(--color-primary);
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(0, 113, 227, 0.1);
+        }
+        
+        .action-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 30px;
+        }
+        
+        .action-button {
+            padding: 16px;
+            border: none;
+            border-radius: 12px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        
+        .action-button.primary {
+            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+            color: white;
+        }
+        
+        .action-button.primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0, 113, 227, 0.3);
+        }
+        
+        .action-button.secondary {
+            background: white;
+            color: var(--color-primary);
+            border: 2px solid var(--color-primary);
+        }
+        
+        .dark-theme .action-button.secondary {
+            background: transparent;
+            color: white;
+            border-color: white;
+        }
+        
+        .action-button.secondary:hover {
+            background: var(--color-primary);
+            color: white;
+        }
+        
+        .summary {
+            margin-top: 20px;
+            padding: 20px;
+            background: rgba(0, 113, 227, 0.1);
+            border-radius: 10px;
+            border-left: 4px solid var(--color-primary);
+            display: none;
+        }
+        
+        .summary.active {
+            display: block;
+            animation: fadeIn 0.5s ease-out;
+        }
+        
+        .summary-title {
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: var(--color-primary);
+        }
+        
+        .summary-text {
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 10px;
+            padding: 10px;
+            background: white;
+            border-radius: 8px;
+            word-break: break-word;
+        }
+        
+        .dark-theme .summary-text {
+            background: rgba(255, 255, 255, 0.05);
+        }
+        
+        /* Стили для нового всплывающего окна заказа */
+        .order-popup {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(10px);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 2002;
+            opacity: 0;
+            transition: opacity 0.3s;
+            animation: fadeIn 0.3s ease-out;
+            padding: 20px;
+        }
+        
+        .order-popup.active {
+            display: flex;
+            opacity: 1;
+        }
+        
+        .order-popup-content {
+            background: var(--color-bg-light);
+            border-radius: 24px;
+            width: 90%;
+            max-width: 550px;
+            max-height: 90vh;
+            overflow-y: auto;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+            transform: scale(0.9) translateY(50px);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        
+        .dark-theme .order-popup-content {
+            background: var(--color-dark);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .order-popup.active .order-popup-content {
+            transform: scale(1) translateY(0);
+        }
+        
+        .order-popup-header {
+            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 24px 24px 0 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .order-popup-header:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--color-primary), var(--color-success), var(--color-primary));
+            background-size: 200% 100%;
+            animation: shimmer 2s infinite linear;
+        }
+        
+        .order-popup-header h3 {
+            font-size: 1.5rem;
+            margin: 0;
+        }
+        
+        .close-order-popup {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+            transition: all 0.3s;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .close-order-popup:hover {
+            transform: scale(1.2) rotate(90deg);
+            background: rgba(255,255,255,0.1);
+        }
+        
+        .order-popup-body {
+            padding: 25px;
+        }
+        
+        .order-popup-body h4 {
+            color: var(--color-primary);
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+        
+        .instruction-step {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            margin-bottom: 20px;
+            padding: 15px;
+            background: rgba(0, 113, 227, 0.05);
+            border-radius: 12px;
+            animation: fadeInLeft 0.5s ease-out;
+        }
+        
+        .instruction-step:nth-child(1) { animation-delay: 0.1s; }
+        .instruction-step:nth-child(2) { animation-delay: 0.2s; }
+        .instruction-step:nth-child(3) { animation-delay: 0.3s; }
+        
+        .step-number {
+            width: 35px;
+            height: 35px;
+            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+        
+        .step-text {
+            flex-grow: 1;
+        }
+        
+        .step-text strong {
+            display: block;
+            margin-bottom: 5px;
+            color: var(--color-dark);
+        }
+        
+        .dark-theme .step-text strong {
+            color: var(--color-light);
+        }
+        
+        .step-text p {
+            color: var(--color-gray-1);
+            font-size: 14px;
+            margin: 0;
+        }
+        
+        .dark-theme .step-text p {
+            color: var(--color-gray-2);
+        }
+        
+        .popup-actions {
+            display: flex;
+            gap: 15px;
+            margin-top: 25px;
+            flex-wrap: wrap;
+        }
+        
+        .popup-actions .action-button {
+            flex: 1;
+            min-width: 140px;
+        }
+        
+        .order-summary-box {
+            background: rgba(0, 113, 227, 0.1);
+            border-radius: 12px;
+            padding: 15px;
+            margin: 20px 0;
+            border-left: 4px solid var(--color-primary);
+        }
+        
+        .order-summary-box p {
+            margin: 5px 0;
+            color: var(--color-dark);
+        }
+        
+        .dark-theme .order-summary-box p {
+            color: var(--color-light);
+        }
+        
+        /* Reviews Section - Enhanced */
+        .reviews-section {
+            padding: 100px 0;
+            margin-bottom: 80px;
+        }
+        
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+        
+        .review-card {
+            background: var(--color-bg-light);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            border: 1px solid var(--color-gray-3);
+            transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            animation: fadeInUp 0.8s ease-out;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .review-card:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px;
+            height: 100%;
+            background: linear-gradient(to bottom, var(--color-primary), var(--color-secondary));
+            transition: width 0.3s;
+        }
+        
+        .review-card:hover:before {
+            width: 100%;
+            opacity: 0.1;
+        }
+        
+        .review-card:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .dark-theme .review-card {
+            background: var(--color-dark);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+        
+        .review-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .reviewer {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .reviewer-avatar {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 600;
+            font-size: 20px;
+            transition: all 0.3s;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+        }
+        
+        .review-card:hover .reviewer-avatar {
+            transform: scale(1.1) rotate(10deg);
+        }
+        
+        .reviewer-info h4 {
+            color: var(--color-dark);
+            margin-bottom: 5px;
+            transition: color 0.3s;
+        }
+        
+        .review-card:hover .reviewer-info h4 {
+            color: var(--color-primary);
+        }
+        
+        .dark-theme .reviewer-info h4 {
+            color: var(--color-light);
+        }
+        
+        .review-date {
+            color: var(--color-gray-1);
+            font-size: 14px;
+        }
+        
+        .dark-theme .review-date {
+            color: var(--color-gray-2);
+        }
+        
+        .rating {
+            color: var(--color-warning);
+            font-size: 16px;
+        }
+        
+        .review-text {
+            color: var(--color-gray-1);
+            line-height: 1.6;
+            font-style: italic;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .dark-theme .review-text {
+            color: var(--color-gray-2);
+        }
+        
+        /* Footer - Enhanced */
+        footer {
+            background: linear-gradient(135deg, var(--color-dark) 0%, #2c2c2e 100%);
+            padding: 80px 0 40px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        footer:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--color-primary), var(--color-secondary), var(--color-accent));
+            background-size: 200% 100%;
+            animation: shimmer 3s infinite linear;
+        }
+        
+        .dark-theme footer {
+            background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 40px;
+            margin-bottom: 40px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .footer-column {
+            animation: fadeInUp 0.8s ease-out;
+        }
+        
+        .footer-column:nth-child(1) { animation-delay: 0.1s; }
+        .footer-column:nth-child(2) { animation-delay: 0.2s; }
+        .footer-column:nth-child(3) { animation-delay: 0.3s; }
+        .footer-column:nth-child(4) { animation-delay: 0.4s; }
+        
+        .footer-column h3 {
+            font-size: 16px;
+            font-weight: 600;
+            color: white;
+            letter-spacing: 0.5px;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+        }
+        
+        .footer-column ul {
+            list-style: none;
+        }
+        
+        .footer-column ul li {
+            margin-bottom: 12px;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 14px;
+            transition: transform 0.3s;
+        }
+        
+        .footer-column ul li:hover {
+            color: white;
+            transform: translateX(5px);
+        }
+        
+        .footer-column a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            transition: all 0.3s;
+            font-size: 14px;
+            display: inline-block;
+            position: relative;
+        }
+        
+        .footer-column a:before {
+            content: '›';
+            position: absolute;
+            left: -15px;
+            opacity: 0;
+            transition: all 0.3s;
+        }
+        
+        .footer-column a:hover:before {
+            left: -10px;
+            opacity: 1;
+            color: var(--color-primary);
+        }
+        
+        .footer-column a:hover {
+            color: white;
+            padding-left: 5px;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .social-links a {
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 18px;
+            transition: all 0.3s;
+        }
+        
+        .social-links a:hover {
+            background: var(--color-primary);
+            transform: translateY(-3px);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 40px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.6);
+            position: relative;
+            z-index: 1;
+            animation: fadeIn 0.8s ease-out 0.5s both;
+        }
+        
+        /* Theme Switcher */
+        .theme-switcher {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 1001;
+            animation: fadeIn 1s ease-out 2s both;
+        }
+        
+        .theme-btn {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.4s;
+            box-shadow: 0 8px 25px rgba(0, 113, 227, 0.3);
+            animation: float 4s ease-in-out infinite;
+        }
+        
+        .theme-btn:hover {
+            transform: scale(1.1) rotate(180deg);
+            box-shadow: 0 12px 35px rgba(0, 113, 227, 0.4);
+            animation: none;
+        }
+        
+        /* Scroll to Top */
+        .scroll-to-top {
+            position: fixed;
+            bottom: 100px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.4s;
+            opacity: 0;
+            visibility: hidden;
+            z-index: 1000;
+            box-shadow: 0 6px 20px rgba(0, 113, 227, 0.3);
+        }
+        
+        .scroll-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .scroll-to-top:hover {
+            transform: translateY(-5px) scale(1.1);
+            box-shadow: 0 10px 30px rgba(0, 113, 227, 0.4);
+        }
+        
+        /* Responsive Styles */
+        @media (max-width: 1200px) {
+            .services-grid,
+            .reviews-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .materials-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            
+            .footer-content {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 992px) {
+            .hero h2 {
+                font-size: 48px;
+            }
+            
+            .hero p {
+                font-size: 24px;
+            }
+            
+            .contact-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .about-content {
+                flex-direction: column;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            header {
+                height: 60px;
+            }
+            
+            nav ul {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: rgba(255, 255, 255, 0.95);
+                backdrop-filter: saturate(180%) blur(20px);
+                flex-direction: column;
+                padding: 20px;
+                text-align: center;
+                box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+                animation: slideInFromBottom 0.5s ease-out;
+            }
+            
+            .dark-theme nav ul {
+                background: rgba(0, 0, 0, 0.95);
+            }
+            
+            nav ul.active {
+                display: flex;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .hero {
+                padding: 140px 0 80px;
+            }
+            
+            .hero h2 {
+                font-size: 36px;
+            }
+            
+            .hero p {
+                font-size: 20px;
+            }
+            
+            .section-title h2 {
+                font-size: 36px;
+            }
+            
+            .section-title p {
+                font-size: 20px;
+            }
+            
+            .services-grid,
+            .reviews-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .materials-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .theme-switcher {
+                bottom: 20px;
+                right: 20px;
+            }
+            
+            .scroll-to-top {
+                bottom: 80px;
+                right: 20px;
+            }
+            
+            .popup-actions {
+                flex-direction: column;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .hero h2 {
+                font-size: 28px;
+            }
+            
+            .hero p {
+                font-size: 18px;
+            }
+            
+            .section-title h2 {
+                font-size: 28px;
+            }
+            
+            .section-title p {
+                font-size: 18px;
+            }
+            
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .cta-button,
+            .telegram-button {
+                width: 100%;
+                max-width: 280px;
+                margin-bottom: 15px;
+            }
+            
+            .materials-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .footer-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .theme-btn {
+                width: 50px;
+                height: 50px;
+                font-size: 1.3rem;
+            }
+            
+            .scroll-to-top {
+                bottom: 70px;
+                right: 20px;
+                width: 40px;
+                height: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Код аналитики (Яндекс.Метрика и Google Analytics) -->
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+        
+        ym(98000000, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true,
+            webvisor:true
+        });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/98000000" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
+    
+    <!-- VK Pixel -->
+    <script type="text/javascript">!function(){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src="https://vk.com/js/api/openapi.js?169",t.onload=function(){VK.Retargeting.Init("VK-RTRG-XXXXXX-XXXXX"),VK.Retargeting.Hit()},document.head.appendChild(t)}();</script>
+    
+    <!-- Theme Switcher -->
+    <div class="theme-switcher">
+        <button class="theme-btn" id="themeToggle">
+            <i class="fas fa-moon"></i>
+        </button>
+    </div>
+    
+    <!-- Scroll to Top -->
+    <div class="scroll-to-top" id="scrollToTop">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+    
+    <!-- Header -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-cube"></i>
+                </div>
+                <div class="logo-text">
+                    <h1>3DPrint СПб</h1>
+                    <p>Профессиональная 3D-печать</p>
+                </div>
+            </div>
+            
+            <button class="mobile-menu-btn" id="menuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav>
+                <ul id="navMenu">
+                    <li><a href="#services">Услуги</a></li>
+                    <li><a href="#materials-comparison">Материалы</a></li>
+                    <li><a href="#about">О нас</a></li>
+                    <li><a href="#materials">Каталог</a></li>
+                    <li><a href="#reviews">Отзывы</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h2>Профессиональная 3D-печать в Санкт-Петербурге</h2>
+                <p>Высококачественная печать любой сложности. Быстро, качественно и по доступным ценам.</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="cta-button">Сделать заказ</a>
+                    <a href="https://t.me/pechatnikk" target="_blank" rel="noopener noreferrer" class="telegram-button">
+                        <i class="fab fa-telegram"></i> Задать вопрос
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Services Section -->
+        <section id="services" class="container">
+            <div class="section-title animate-on-scroll">
+                <h2>Наши услуги</h2>
+                <p>Полный цикл от идеи до готового изделия</p>
+            </div>
+            
+            <div class="services-grid">
+                <!-- 3D Printing -->
+                <div class="service-card animate-on-scroll">
+                    <div class="service-icon">
+                        <i class="fas fa-print"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>3D-печать на заказ</h3>
+                        <p>Печатаем детали любой сложности на современных 3D-принтерах. Работаем с различными материалами: PLA, ABS, PETG, нейлон, резиноподобный пластик.</p>
+                        
+                        <button class="price-button" onclick="openPriceModal('print')">
+                            <i class="fas fa-tag"></i> Узнать цены
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- 3D Modeling -->
+                <div class="service-card animate-on-scroll">
+                    <div class="service-icon">
+                        <i class="fas fa-pencil-ruler"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>3D-моделирование</h3>
+                        <p>Создадим 3D-модель по вашему техническому заданию, чертежу или эскизу. Подготовим файл для печати с учетом всех технологических требований.</p>
+                        
+                        <button class="price-button" onclick="openPriceModal('modeling')">
+                            <i class="fas fa-tag"></i> Узнать цены
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Small Series Production -->
+                <div class="service-card animate-on-scroll">
+                    <div class="service-icon">
+                        <i class="fas fa-industry"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Мелкосерийное производство</h3>
+                        <p>Изготовление небольших партий изделий от 10 до 1000 штук с гарантией качества. Идеально для стартапов и малого бизнеса.</p>
+                        
+                        <button class="price-button" onclick="openPriceModal('small-series')">
+                            <i class="fas fa-tag"></i> Узнать цены
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Materials Comparison Table Section -->
+        <section id="materials-comparison" class="comparison-section">
+            <div class="container">
+                <div class="section-title animate-on-scroll">
+                    <h2>Сравнение материалов</h2>
+                    <p>Выберите оптимальный материал для вашего проекта</p>
+                </div>
+                
+                <div class="comparison-table-container animate-on-scroll">
+                    <table class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th>Характеристика</th>
+                                <th class="material-pla">PLA</th>
+                                <th class="material-abs">ABS</th>
+                                <th class="material-petg">PETG</th>
+                                <th class="material-nylon">Нейлон</th>
+                                <th class="material-tpu">TPU</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Прочность</td>
+                                <td class="material-pla">Средняя</td>
+                                <td class="material-abs">Высокая</td>
+                                <td class="material-petg">Высокая</td>
+                                <td class="material-nylon">Очень высокая</td>
+                                <td class="material-tpu">Гибкая</td>
+                            </tr>
+                            <tr>
+                                <td>Термостойкость</td>
+                                <td class="material-pla">До 60°C</td>
+                                <td class="material-abs">До 100°C</td>
+                                <td class="material-petg">До 80°C</td>
+                                <td class="material-nylon">До 120°C</td>
+                                <td class="material-tpu">До 70°C</td>
+                            </tr>
+                            <tr>
+                                <td>Гибкость</td>
+                                <td class="material-pla">Низкая</td>
+                                <td class="material-abs">Средняя</td>
+                                <td class="material-petg">Средняя</td>
+                                <td class="material-nylon">Высокая</td>
+                                <td class="material-tpu">Очень высокая</td>
+                            </tr>
+                            <tr>
+                                <td>Сложность печати</td>
+                                <td class="material-pla">Низкая</td>
+                                <td class="material-abs">Высокая</td>
+                                <td class="material-petg">Средняя</td>
+                                <td class="material-nylon">Высокая</td>
+                                <td class="material-tpu">Высокая</td>
+                            </tr>
+                            <tr>
+                                <td>Стоимость (₽/г)</td>
+                                <td class="material-pla">5-7</td>
+                                <td class="material-abs">7-9</td>
+                                <td class="material-petg">5-10</td>
+                                <td class="material-nylon">13-17</td>
+                                <td class="material-tpu">12-18</td>
+                            </tr>
+                            <tr class="best-choice">
+                                <td>Рекомендуем для</td>
+                                <td class="material-pla">Первого проекта</td>
+                                <td class="material-abs">Автозапчастей</td>
+                                <td class="material-petg">Универсального использования</td>
+                                <td class="material-nylon">Прочных конструкций</td>
+                                <td class="material-tpu">Гибких изделий</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div style="text-align: center; margin-top: 40px;" class="animate-on-scroll">
+                    <a href="#contact" class="cta-button">
+                        <i class="fas fa-question-circle"></i> Получить консультацию
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text animate-on-scroll">
+                        <h2>О нашей компании</h2>
+                        <p>Мы - команда профессионалов в области 3D-печати, работающая в Санкт-Петербурге с 2025 года. Наша миссия - сделать 3D-печать доступной для всех: от студентов и изобретателей до крупных предприятий.</p>
+                        <p>Мы используем современное оборудование и проверенные материалы, что позволяет нам гарантировать высокое качество каждого изделия. Наши специалисты помогут на всех этапах - от создания 3D-модели до постобработки готового изделия.</p>
+                        <p>Работаем как с физическими лицами, так и с организациями. Готовы взяться за проекты любой сложности - от единичных прототипов до небольших серий.</p>
+                    </div>
+                    <div class="about-image animate-on-scroll">
+                        <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                             alt="Современный 3D-принтер в работе на производстве">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Materials Cards Section -->
+        <section id="materials" class="materials container">
+            <div class="section-title animate-on-scroll">
+                <h2>Используемые материалы</h2>
+                <p>Нажмите на материал, чтобы узнать подробности</p> <!-- Изменен текст подсказки -->
+            </div>
+            
+            <div class="materials-grid">
+                <div class="material-card animate-on-scroll" onclick="openMaterialModal('pla')">
+                    <div class="material-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>PLA</h3>
+                    <p>Биоразлагаемый пластик. Идеален для прототипов, моделей, сувениров.</p>
+                </div>
+                
+                <div class="material-card animate-on-scroll" onclick="openMaterialModal('abs')">
+                    <div class="material-icon">
+                        <i class="fas fa-hard-hat"></i>
+                    </div>
+                    <h3>ABS</h3>
+                    <p>Прочный, термостойкий пластик для функциональных деталей.</p>
+                </div>
+                
+                <div class="material-card animate-on-scroll" onclick="openMaterialModal('petg')">
+                    <div class="material-icon">
+                        <i class="fas fa-wine-bottle"></i>
+                    </div>
+                    <h3>PETG</h3>
+                    <p>Прочный и гибкий, устойчив к ударам и химическим веществам.</p>
+                </div>
+                
+                <div class="material-card animate-on-scroll" onclick="openMaterialModal('nylon')">
+                    <div class="material-icon">
+                        <i class="fas fa-tshirt"></i>
+                    </div>
+                    <h3>Нейлон</h3>
+                    <p>Высокая прочность, износостойкость, гибкость. Для ответственных деталей.</p>
+                </div>
+                
+                <div class="material-card animate-on-scroll" onclick="openMaterialModal('tpu')">
+                    <div class="material-icon">
+                        <i class="fas fa-basketball-ball"></i>
+                    </div>
+                    <h3>TPU</h3>
+                    <p>Гибкий, резиноподобный материал. Для упругих и эластичных изделий.</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Reviews Section -->
+        <section id="reviews" class="reviews-section">
+            <div class="container">
+                <div class="section-title animate-on-scroll">
+                    <h2>Отзывы клиентов</h2>
+                    <p>Что говорят о нашей работе довольные заказчики</p>
+                </div>
+                
+                <div class="reviews-grid">
+                    <div class="review-card animate-on-scroll">
+                        <div class="review-header">
+                            <div class="reviewer">
+                                <div class="reviewer-avatar">МН</div>
+                                <div class="reviewer-info">
+                                    <h4>Михаил Новиков</h4>
+                                    <div class="review-date">30 октября 2025</div>
+                                </div>
+                            </div>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="review-text">
+                            "Превосходный быстрый сервис. Вечером написал, установил ТУ – на следующий день уже все выполнено и доставлено. Пластик очень крепкий и надёжный. Рекомендую к сотрудничеству."
+                        </div>
+                    </div>
+                    
+                    <div class="review-card animate-on-scroll">
+                        <div class="review-header">
+                            <div class="reviewer">
+                                <div class="reviewer-avatar">ИГ</div>
+                                <div class="reviewer-info">
+                                    <h4>Игорь</h4>
+                                    <div class="review-date">18 ноября 2025</div>
+                                </div>
+                            </div>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                        <div class="review-text">
+                            "Сделка состоялась, деталь изготовил быстро, цена гораздо ниже чем у других, рекомендую."
+                        </div>
+                    </div>
+                    
+                    <div class="review-card animate-on-scroll">
+                        <div class="review-header">
+                            <div class="reviewer">
+                                <div class="reviewer-avatar">ЮС</div>
+                                <div class="reviewer-info">
+                                    <h4>Юрий Смирнов</h4>
+                                    <div class="review-date">8 декабря 2025</div>
+                                </div>
+                            </div>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="review-text">
+                            "Нужна была деталь для металлоискателя, сделали быстро, пластик надёжный!"
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Price Modals -->
+        <div class="price-modal" id="priceModal" onclick="closePriceModal()">
+            <!-- 3D Printing -->
+            <div class="price-modal-content" id="print-price" onclick="event.stopPropagation()">
+                <div class="price-header">
+                    <h3>3D-печать на заказ</h3>
+                    <button class="close-price" onclick="closePriceModal()">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="price-body">
+                    <p><strong>Минимальный заказ:</strong> от 300 ₽</p>
+                    
+                    <div class="price-item">
+                        <div>
+                            <strong>PLA пластик</strong>
+                            <div class="price-description">Стандартный, цветной, биоразлагаемый</div>
+                        </div>
+                        <div class="price-value">от 5 ₽/г</div>
+                    </div>
+                    
+                    <div class="price-item">
+                        <div>
+                            <strong>ABS пластик</strong>
+                            <div class="price-description">Прочный, термостойкий, для механических деталей</div>
+                        </div>
+                        <div class="price-value">от 7 ₽/г</div>
+                    </div>
+                    
+                    <div class="price-item">
+                        <div>
+                            <strong>PETG пластик</strong>
+                            <div class="price-description">Гибкий, ударопрочный, химически стойкий</div>
+                        </div>
+                        <div class="price-value">от 8 ₽/г</div>
+                    </div>
+                    
+                    <div class="price-item">
+                        <div>
+                            <strong>Нейлон / TPU</strong>
+                            <div class="price-description">Специальные материалы по запросу</div>
+                        </div>
+                        <div class="price-value">от 10 ₽/г</div>
+                    </div>
+                    
+                    <div class="price-total">
+                        <p><strong>Примерная стоимость простой детали:</strong></p>
+                        <div class="price-value">300-500 ₽</div>
+                        <div class="price-description">(размером примерно 5×5×5 см, материал PLA)</div>
+                    </div>
+                    
+                    <div class="price-action">
+                        <p><strong>Как заказать:</strong> Пришлите 3D-модель (формат .stl, .obj) или опишите деталь. Мы рассчитаем точную стоимость в течение 2 часов.</p>
+                        <a href="#contact" class="buy-link" onclick="closePriceModal()">
+                            Заказать расчет <i class="fas fa-calculator"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 3D Modeling -->
+            <div class="price-modal-content" id="modeling-price" onclick="event.stopPropagation()">
+                <div class="price-header">
+                    <h3>3D-моделирование</h3>
+                    <button class="close-price" onclick="closePriceModal()">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="price-body">
+                    <p><strong>Минимальный заказ:</strong> от 1500 ₽</p>
+                    
+                    <div class="price-item">
+                        <div>
+                            <strong>Простая модель</strong>
+                            <div class="price-description">Несложные геометрические формы, 1-2 часа работы</div>
+                        </div>
+                        <div class="price-value">1500-3000 ₽</div>
+                    </div>
+                    
+                    <div class="price-item">
+                        <div>
+                            <strong>Средняя сложность</strong>
+                            <div class="price-description">Детали с механизмами, технические изделия, 3-8 часов</div>
+                        </div>
+                        <div class="price-value">3000-8000 ₽</div>
+                    </div>
+                    
+                    <div class="price-item">
+                        <div>
+                            <strong>Сложная модель</strong>
+                            <div class="price-description">Органические формы, скульптуры, архитектура, от 8 часов</div>
+                        </div>
+                        <div class="price-value">от 8000 ₽</div>
+                    </div>
+                    
+                    <div class="price-total">
+                        <p><strong>Средняя стоимость модели для печати:</strong></p>
+                        <div class="price-value">3000-5000 ₽</div>
+                        <div class="price-description">(зависит от сложности и наличия чертежей)</div>
+                    </div>
+                    
+                    <div class="price-action">
+                        <p><strong>Как заказать:</strong> Пришлите чертежи, эскизы или описание. Мы оценим сложность и назовем точную цену.</p>
+                        <a href="#contact" class="buy-link" onclick="closePriceModal()">
+                            Обсудить проект <i class="fas fa-comments"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Small Series Production -->
+            <div class="price-modal-content" id="small-series-price" onclick="event.stopPropagation()">
+                <div class="price-header">
+                    <h3>Мелкосерийное производство</h3>
+                    <button class="close-price" onclick="closePriceModal()">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="price-body">
+                    <p><strong>Минимальный заказ:</strong> от 10 штук</p>
+                    
+                    <div class="price-item">
+                        <div>
+                            <strong>Партия 10-50 шт</strong>
+                            <div class="price-description">Небольшие партии для тестирования рынка</div>
+                        </div>
+                        <div class="price-value">от 200 ₽/шт</div>
+                    </div>
+                    
+                    <div class="price-item">
+                        <div>
+                            <strong>Партия 50-200 шт</strong>
+                            <div class="price-description">Оптимально для стартапов и малого бизнеса</div>
+                        </div>
+                        <div class="price-value">от 150 ₽/шт</div>
+                    </div>
+                    
+                    <div class="price-item">
+                        <div>
+                            <strong>Партия 200-1000 шт</strong>
+                            <div class="price-description">Крупные партии со скидкой</div>
+                        </div>
+                        <div class="price-value">от 100 ₽/шт</div>
+                    </div>
+                    
+                    <div class="price-item">
+                        <div>
+                            <strong>Упаковка и маркировка</strong>
+                            <div class="price-description">Профессиональная упаковка продукции</div>
+                        </div>
+                        <div class="price-value">от 50 ₽/шт</div>
+                    </div>
+                    
+                    <div class="price-total">
+                        <p><strong>Пример для партии 100 шт:</strong></p>
+                        <div class="price-value">15 000 ₽</div>
+                        <div class="price-description">(150 ₽/шт × 100 шт, материал PLA)</div>
+                    </div>
+                    
+                    <div class="price-action">
+                        <p><strong>Как заказать:</strong> Пришлите 3D-модель и укажите желаемый тираж. Мы рассчитаем стоимость с учетом скидки за объем.</p>
+                        <a href="#contact" class="buy-link" onclick="closePriceModal()">
+                            Обсудить партию <i class="fas fa-industry"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Material Modals (UPDATED: links removed) -->
+        <div class="modal-overlay" id="materialModalOverlay" onclick="closeMaterialModal()">
+            <!-- PLA Modal -->
+            <div class="material-modal" id="pla-modal" onclick="event.stopPropagation()">
+                <div class="modal-header" style="--material-color: var(--color-pla); --material-color-dark: #2ecc71;">
+                    <h3>PLA пластик</h3>
+                    <button class="close-modal" onclick="closeMaterialModal()">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="modal-content">
+                    <img src="https://images.unsplash.com/photo-1563089145-599997674d42?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                         alt="PLA пластик для 3D печати - биоразлагаемый материал" 
+                         class="modal-image">
+                    
+                    <div class="modal-description">
+                        <p><strong>PLA (Polylactic Acid)</strong> — биоразлагаемый пластик на основе кукурузного крахмала или сахарного тростника. Легко печатается, имеет низкую усадку, не требует подогреваемого стола. Идеален для моделей, прототипов, декоративных изделий и игрушек.</p>
+                        <p><strong>Особенности:</strong> экологичный, не имеет запаха при печати, доступен в широкой цветовой гамме, но имеет низкую термостойкость (до 60°C).</p>
+                    </div>
+                    
+                    <!-- Links and buy reasons removed -->
+                </div>
+            </div>
+            
+            <!-- ABS Modal -->
+            <div class="material-modal" id="abs-modal" onclick="event.stopPropagation()">
+                <div class="modal-header" style="--material-color: var(--color-abs); --material-color-dark: #e67e22;">
+                    <h3>ABS пластик</h3>
+                    <button class="close-modal" onclick="closeMaterialModal()">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="modal-content">
+                    <img src="https://images.unsplash.com/photo-1593941707882-a5bba5338fe2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                         alt="ABS пластик для 3D печати - прочный инженерный материал" 
+                         class="modal-image">
+                    
+                    <div class="modal-description">
+                        <p><strong>ABS (Acrylonitrile Butadiene Styrene)</strong> — прочный инженерный пластик, устойчивый к ударам и высокой температуре. Требует печати на подогреваемом столе и в закрытой камере. Идеален для функциональных деталей, автомобильных запчастей, корпусов устройств.</p>
+                        <p><strong>Особенности:</strong> высокая прочность, термостойкость (до 100°C), поддается постобработке ацетоном, но может деформироваться при печати и имеет запах.</p>
+                    </div>
+                    
+                    <!-- Links and buy reasons removed -->
+                </div>
+            </div>
+            
+            <!-- PETG Modal -->
+            <div class="material-modal" id="petg-modal" onclick="event.stopPropagation()">
+                <div class="modal-header" style="--material-color: var(--color-petg); --material-color-dark: #0066cc;">
+                    <h3>PETG пластик</h3>
+                    <button class="close-modal" onclick="closeMaterialModal()">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="modal-content">
+                    <img src="https://images.unsplash.com/photo-1624554012935-92fa2a8c5e6d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                         alt="PETG пластик для 3D печати - ударопрочный материал" 
+                         class="modal-image">
+                    
+                    <div class="modal-description">
+                        <p><strong>PETG (Polyethylene Terephthalate Glycol)</strong> — золотая середина между PLA и ABS. Сочетает легкость печати PLA с прочностью ABS. Устойчив к ударам, химическим веществам и УФ-излучению. Идеален для уличных изделий, механических деталей, пищевых контейнеров.</p>
+                        <p><strong>Особенности:</strong> прочный, гибкий, химически стойкий, прозрачный в базовом варианте, минимальная усадка, но требует точной настройки температуры.</p>
+                    </div>
+                    
+                    <!-- Links and buy reasons removed -->
+                </div>
+            </div>
+            
+            <!-- Нейлон Modal -->
+            <div class="material-modal" id="nylon-modal" onclick="event.stopPropagation()">
+                <div class="modal-header" style="--material-color: var(--color-nylon); --material-color-dark: #4a4ac4;">
+                    <h3>Нейлон (PA)</h3>
+                    <button class="close-modal" onclick="closeMaterialModal()">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="modal-content">
+                    <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                         alt="Нейлон для 3D печати - сверхпрочный материал" 
+                         class="modal-image">
+                    
+                    <div class="modal-description">
+                        <p><strong>Нейлон (Polyamide)</strong> — сверхпрочный инженерный пластик с высокой износостойкостью и гибкостью. Идеален для ответственных деталей, шестеренок, креплений, функциональных прототипов.</p>
+                        <p><strong>Особенности:</strong> высокая прочность на разрыв, износостойкость, низкий коэффициент трения, устойчивость к маслам и растворителям, но требует печати при высоких температурах и гигроскопичен.</p>
+                    </div>
+                    
+                    <!-- Links and buy reasons removed -->
+                </div>
+            </div>
+            
+            <!-- TPU Modal -->
+            <div class="material-modal" id="tpu-modal" onclick="event.stopPropagation()">
+                <div class="modal-header" style="--material-color: var(--color-tpu); --material-color-dark: #e62e5c;">
+                    <h3>TPU пластик</h3>
+                    <button class="close-modal" onclick="closeMaterialModal()">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="modal-content">
+                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                         alt="TPU пластик для 3D печати - гибкий эластичный материал" 
+                         class="modal-image">
+                    
+                    <div class="modal-description">
+                        <p><strong>TPU (Thermoplastic Polyurethane)</strong> — гибкий, эластичный пластик с резиноподобными свойствами. Идеален для упругих деталей, амортизаторов, защитных чехлов, уплотнителей, протезов и игрушек.</p>
+                        <p><strong>Особенности:</strong> высокая гибкость, ударопрочность, износостойкость, устойчивость к маслам и химикатам, но сложен в печати из-за гибкости нити.</p>
+                    </div>
+                    
+                    <!-- Links and buy reasons removed -->
+                </div>
+            </div>
+        </div>
+        
+        <!-- Contact Section with Configurator -->
+        <section id="contact" class="contact">
+            <div class="container contact-container">
+                <div class="contact-info animate-on-scroll">
+                    <h3>Свяжитесь с нами</h3>
+                    <p>Готовы обсудить ваш проект? Оставьте заявку, и мы свяжемся с вами в течение часа!</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-detail">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Адрес</h4>
+                                <a href="https://yandex.ru/maps/2/saint-petersburg/?ll=30.335099%2C59.934280&mode=search&oid=1031733615&ol=biz&z=17" target="_blank" rel="noopener noreferrer" class="contact-link">
+                                    Санкт-Петербург, ул. Автовская, 17
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-detail">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Телефон</h4>
+                                <a href="tel:+79952368591" class="contact-link">
+                                    +7 (995) 236-85-91
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-detail">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <a href="mailto:fedoseev.kirill12@mail.ru" class="contact-link">
+                                    fedoseev.kirill12@mail.ru
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-detail">
+                            <i class="fab fa-telegram"></i>
+                            <div>
+                                <h4>Telegram</h4>
+                                <a href="https://t.me/pechatnikk" target="_blank" rel="noopener noreferrer" class="contact-link">
+                                    @pechatnikk
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form animate-on-scroll">
+                    <div class="configurator-container">
+                        <h4><i class="fas fa-cog"></i> Конфигуратор заказа</h4>
+                        
+                        <div class="configurator-grid">
+                            <!-- НОВОЕ: Выбор наличия 3D-модели -->
+                            <div class="configurator-item">
+                                <label for="hasModel"><i class="fas fa-cube"></i> Есть ли у вас 3D-модель?</label>
+                                <select id="hasModel">
+                                    <option value="Есть готовая модель">Есть готовая модель (STL/OBJ)</option>
+                                    <option value="Нужно разработать">Нужно разработать модель</option>
+                                    <option value="Есть чертежи/эскизы">Есть чертежи/эскизы</option>
+                                </select>
+                            </div>
+                            
+                            <div class="configurator-item">
+                                <label for="plasticType"><i class="fas fa-cube"></i> Вид пластика:</label>
+                                <select id="plasticType">
+                                    <option value="PLA">PLA (биоразлагаемый)</option>
+                                    <option value="ABS">ABS (прочный)</option>
+                                    <option value="PETG">PETG (ударопрочный)</option>
+                                    <option value="Нейлон">Нейлон (сверхпрочный)</option>
+                                    <option value="TPU">TPU (гибкий)</option>
+                                    <!-- НОВЫЙ ПУНКТ: помощь с подбором -->
+                                    <option value="Не знаю, нужна помощь с подбором">Не знаю, нужна помощь с подбором</option>
+                                </select>
+                            </div>
+                            
+                            <!-- НОВОЕ: Выбор варианта указания веса -->
+                            <div class="configurator-item">
+                                <label for="weightOption"><i class="fas fa-weight"></i> Как указать вес?</label>
+                                <select id="weightOption" onchange="toggleWeightInput()">
+                                    <option value="specify">Указать вес (граммы)</option>
+                                    <option value="calculate">Нужно рассчитать</option>
+                                </select>
+                            </div>
+                            
+                            <div class="configurator-item" id="weightInputContainer">
+                                <label for="weight"><i class="fas fa-weight"></i> Вес (граммы):</label>
+                                <input type="number" id="weight" min="1" max="5000" value="100" placeholder="Введите вес в граммах">
+                            </div>
+                            
+                            <!-- НОВОЕ: Скрытое сообщение для расчета веса -->
+                            <div class="configurator-item" id="weightCalculateMessage" style="display: none;">
+                                <label><i class="fas fa-calculator"></i> Расчет веса:</label>
+                                <div style="padding: 12px 15px; background: rgba(0, 113, 227, 0.1); border-radius: 10px; color: var(--color-primary);">
+                                    <i class="fas fa-info-circle"></i> Мы рассчитаем вес по вашей модели
+                                </div>
+                            </div>
+                            
+                            <div class="configurator-item">
+                                <label for="color"><i class="fas fa-palette"></i> Цвет:</label>
+                                <select id="color">
+                                    <option value="Белый">Белый</option>
+                                    <option value="Черный">Черный</option>
+                                    <option value="Красный">Красный</option>
+                                    <option value="Синий">Синий</option>
+                                    <option value="Зеленый">Зеленый</option>
+                                    <option value="Желтый">Желтый</option>
+                                    <option value="Прозрачный">Прозрачный</option>
+                                    <option value="Другой">Другой (уточнить)</option>
+                                </select>
+                            </div>
+                            
+                            <div class="configurator-item">
+                                <label for="purpose"><i class="fas fa-clipboard-list"></i> Назначение:</label>
+                                <select id="purpose">
+                                    <option value="Прототип">Прототип</option>
+                                    <option value="Функциональная деталь">Функциональная деталь</option>
+                                    <option value="Декоративное изделие">Декоративное изделие</option>
+                                    <option value="Сувенир">Сувенир</option>
+                                    <option value="Запчасть">Запчасть</option>
+                                    <option value="Другое">Другое</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="action-buttons">
+                            <button class="action-button primary" onclick="prepareOrder()">
+                                <i class="fas fa-check-circle"></i> Сформировать заказ
+                            </button>
+                        </div>
+                        
+                        <!-- Скрываем старую сводку, так как теперь будем показывать всплывающее окно -->
+                        <div class="summary" id="orderSummary" style="display: none;">
+                            <div class="summary-title">
+                                <i class="fas fa-shopping-cart"></i> Ваш заказ:
+                            </div>
+                            <div class="summary-text" id="orderText"></div>
+                            <div class="action-buttons">
+                                <button class="action-button secondary" onclick="copyOrder()">
+                                    <i class="fas fa-copy"></i> Копировать текст
+                                </button>
+                                <a href="https://www.avito.ru/user/ваш_профиль" target="_blank" class="action-button primary" style="text-decoration: none; text-align: center;" onclick="return confirmOpenAvito()">
+                                    <i class="fab fa-avito"></i> Открыть Авито
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- НОВОЕ: Всплывающее окно заказа с инструкцией и ссылкой -->
+    <div class="order-popup" id="orderPopup" onclick="closeOrderPopup()">
+        <div class="order-popup-content" onclick="event.stopPropagation()">
+            <div class="order-popup-header">
+                <h3><i class="fas fa-shopping-cart"></i> Ваш заказ сформирован</h3>
+                <button class="close-order-popup" onclick="closeOrderPopup()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="order-popup-body">
+                <h4>Краткая информация о заказе:</h4>
+                <div class="order-summary-box" id="orderSummaryPopup">
+                    <!-- Здесь будет текст заказа -->
+                </div>
+                
+                <h4 style="margin-top: 25px;">Что делать дальше:</h4>
+                
+                <div class="instruction-step">
+                    <div class="step-number">1</div>
+                    <div class="step-text">
+                        <strong>Скопируйте текст заказа</strong>
+                        <p>Нажмите кнопку "Копировать текст" чтобы сохранить заказ в буфер обмена.</p>
+                    </div>
+                </div>
+                
+                <div class="instruction-step">
+                    <div class="step-number">2</div>
+                    <div class="step-text">
+                        <strong>Перейдите на Авито</strong>
+                        <p>Нажмите кнопку "Открыть Авито" и начните чат с продавцом.</p>
+                    </div>
+                </div>
+                
+                <div class="instruction-step">
+                    <div class="step-number">3</div>
+                    <div class="step-text">
+                        <strong>Вставьте текст заказа</strong>
+                        <p>Вставьте скопированный текст в сообщение и отправьте нам. Мы ответим в течение часа!</p>
+                    </div>
+                </div>
+                
+                <div class="popup-actions">
+                    <button class="action-button secondary" onclick="copyOrderFromPopup()">
+                        <i class="fas fa-copy"></i> Копировать текст
+                    </button>
+                    <a href="https://www.avito.ru/sankt-peterburg/predlozheniya_uslug/pechat_na_3d_printere_7727812625?utm_campaign=native&utm_medium=item_page_ios&utm_source=soc_sharing_seller" target="_blank" class="action-button primary" style="text-decoration: none; text-align: center;">
+                        <i class="fab fa-avito"></i> Открыть Авито
+                    </a>
+                </div>
+                
+                <p style="text-align: center; margin-top: 20px; color: var(--color-gray-1); font-size: 13px;">
+                    <i class="fas fa-clock"></i> Обычно отвечаем в течение 30-60 минут
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column animate-on-scroll">
+                    <h3>3DPrint СПб</h3>
+                    <p>Профессиональная 3D-печать в Санкт-Петербурге. Качество, скорость и надежность.</p>
+                    <div class="social-links">
+                        <a href="https://t.me/pechatnikk" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                        <a href="https://yandex.ru/maps/2/saint-petersburg/?ll=30.335099%2C59.934280&mode=search&oid=1031733615&ol=biz&z=17" target="_blank" rel="noopener noreferrer">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </a>
+                        <a href="tel:+79952368591">
+                            <i class="fas fa-phone"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-column animate-on-scroll">
+                    <h3>Услуги</h3>
+                    <ul>
+                        <li><a href="#services">3D-печать на заказ</a></li>
+                        <li><a href="#services">3D-моделирование</a></li>
+                        <li><a href="#services">Мелкосерийное производство</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column animate-on-scroll">
+                    <h3>Контакты</h3>
+                    <ul>
+                        <li><a href="https://yandex.ru/maps/2/saint-petersburg/?ll=30.335099%2C59.934280&mode=search&oid=1031733615&ol=biz&z=17" target="_blank" rel="noopener noreferrer"><i class="fas fa-map-marker-alt"></i> СПб, ул. Автовская, 17</a></li>
+                        <li><a href="tel:+79952368591"><i class="fas fa-phone"></i> +7 (995) 236-85-91</a></li>
+                        <li><a href="mailto:fedoseev.kirill12@mail.ru"><i class="fas fa-envelope"></i> fedoseev.kirill12@mail.ru</a></li>
+                        <li><a href="https://t.me/pechatnikk" target="_blank" rel="noopener noreferrer"><i class="fab fa-telegram"></i> @pechatnikk</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column animate-on-scroll">
+                    <h3>Часы работы</h3>
+                    <ul>
+                        <li>Пн-Пт: 9:00 - 21:00</li>
+                        <li>Сб: 10:00 - 23:00</li>
+                        <li>Вс: 11:00 - 21:00</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright animate-on-scroll">
+                <p>&copy; 2025 3DPrint СПб. Все права защищены.</p>
+                <p><a href="/privacy-policy.html" style="color: rgba(255,255,255,0.6);">Политика конфиденциальности</a></p>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // Mobile Menu
+        const menuBtn = document.getElementById('menuBtn');
+        const navMenu = document.getElementById('navMenu');
+        
+        menuBtn.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            const icon = menuBtn.querySelector('i');
+            icon.classList.toggle('fa-bars');
+            icon.classList.toggle('fa-times');
+        });
+        
+        // Close menu on link click
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                const icon = menuBtn.querySelector('i');
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            });
+        });
+        
+        // Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Animate on Scroll
+        function animateOnScroll() {
+            const elements = document.querySelectorAll('.animate-on-scroll');
+            elements.forEach(element => {
+                const elementPosition = element.getBoundingClientRect().top;
+                const screenPosition = window.innerHeight / 1.2;
+                if (elementPosition < screenPosition) {
+                    element.classList.add('animated');
+                }
+            });
+            
+            // Scroll to Top Button
+            const scrollToTopBtn = document.getElementById('scrollToTop');
+            if (window.scrollY > 300) {
+                scrollToTopBtn.classList.add('visible');
+            } else {
+                scrollToTopBtn.classList.remove('visible');
+            }
+        }
+        
+        // Scroll to Top
+        document.getElementById('scrollToTop').addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+        
+        window.addEventListener('scroll', animateOnScroll);
+        window.addEventListener('load', animateOnScroll);
+        
+        // НОВАЯ ФУНКЦИЯ: Переключение между указанием веса и расчетом
+        function toggleWeightInput() {
+            const weightOption = document.getElementById('weightOption').value;
+            const weightInputContainer = document.getElementById('weightInputContainer');
+            const weightCalculateMessage = document.getElementById('weightCalculateMessage');
+            
+            if (weightOption === 'specify') {
+                weightInputContainer.style.display = 'flex';
+                weightCalculateMessage.style.display = 'none';
+            } else {
+                weightInputContainer.style.display = 'none';
+                weightCalculateMessage.style.display = 'flex';
+            }
+        }
+        
+        // Open Material Modal
+        function openMaterialModal(materialId) {
+            const modalOverlay = document.getElementById('materialModalOverlay');
+            const allModals = document.querySelectorAll('.material-modal');
+            allModals.forEach(modal => modal.style.display = 'none');
+            
+            const targetModal = document.getElementById(`${materialId}-modal`);
+            if (targetModal) {
+                targetModal.style.display = 'block';
+                modalOverlay.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+        }
+        
+        // Close Material Modal
+        function closeMaterialModal() {
+            const modalOverlay = document.getElementById('materialModalOverlay');
+            modalOverlay.classList.remove('active');
+            document.body.style.overflow = 'auto';
+            
+            setTimeout(() => {
+                const allModals = document.querySelectorAll('.material-modal');
+                allModals.forEach(modal => modal.style.display = 'none');
+            }, 300);
+        }
+        
+        // Open Price Modal
+        function openPriceModal(serviceId) {
+            const priceModal = document.getElementById('priceModal');
+            const allPriceModals = document.querySelectorAll('.price-modal-content');
+            
+            allPriceModals.forEach(modal => modal.style.display = 'none');
+            
+            const targetPriceModal = document.getElementById(`${serviceId}-price`);
+            if (targetPriceModal) {
+                targetPriceModal.style.display = 'block';
+                priceModal.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+        }
+        
+        // Close Price Modal
+        function closePriceModal() {
+            const priceModal = document.getElementById('priceModal');
+            priceModal.classList.remove('active');
+            document.body.style.overflow = 'auto';
+            
+            setTimeout(() => {
+                const allPriceModals = document.querySelectorAll('.price-modal-content');
+                allPriceModals.forEach(modal => modal.style.display = 'none');
+            }, 300);
+        }
+        
+        // Close modals on Escape
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                closeMaterialModal();
+                closePriceModal();
+                closeOrderPopup();
+            }
+        });
+        
+        // Theme Toggle
+        const themeToggle = document.getElementById('themeToggle');
+        const body = document.body;
+        
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'dark') {
+            body.classList.add('dark-theme');
+            themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+        }
+        
+        themeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-theme');
+            const icon = themeToggle.querySelector('i');
+            if (body.classList.contains('dark-theme')) {
+                icon.classList.remove('fa-moon');
+                icon.classList.add('fa-sun');
+                localStorage.setItem('theme', 'dark');
+            } else {
+                icon.classList.remove('fa-sun');
+                icon.classList.add('fa-moon');
+                localStorage.setItem('theme', 'light');
+            }
+        });
+        
+        // Функции для конфигуратора
+        function prepareOrder() {
+            // Получаем значения из формы
+            const hasModel = document.getElementById('hasModel').value;
+            const plastic = document.getElementById('plasticType').value;
+            const weightOption = document.getElementById('weightOption').value;
+            let weightText = '';
+            
+            if (weightOption === 'specify') {
+                const weight = document.getElementById('weight').value;
+                weightText = `${weight} г`;
+            } else {
+                weightText = 'нужно рассчитать по модели';
+            }
+            
+            const color = document.getElementById('color').value;
+            const purpose = document.getElementById('purpose').value;
+            
+            // Формируем текст заказа
+            const orderText = `Здравствуйте! Хочу заказать 3D-печать:
+            
+🔹 Наличие 3D-модели: ${hasModel}
+🔹 Вид пластика: ${plastic}
+🔹 Вес: ${weightText}
+🔹 Цвет: ${color}
+🔹 Назначение: ${purpose}
+
+Прошу рассчитать стоимость и сроки изготовления. Спасибо!`;
+            
+            // Сохраняем текст заказа для последующего использования
+            window.currentOrderText = orderText;
+            
+            // Показываем всплывающее окно с инструкцией
+            showOrderPopup(orderText);
+        }
+        
+        // НОВАЯ ФУНКЦИЯ: Показать всплывающее окно заказа
+        function showOrderPopup(orderText) {
+            const orderPopup = document.getElementById('orderPopup');
+            const orderSummaryPopup = document.getElementById('orderSummaryPopup');
+            
+            // Форматируем текст для отображения
+            const formattedText = orderText.replace(/\n/g, '<br>');
+            orderSummaryPopup.innerHTML = formattedText;
+            
+            orderPopup.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+        
+        // НОВАЯ ФУНКЦИЯ: Закрыть всплывающее окно заказа
+        function closeOrderPopup() {
+            const orderPopup = document.getElementById('orderPopup');
+            orderPopup.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+        
+        // НОВАЯ ФУНКЦИЯ: Копировать заказ из всплывающего окна
+        function copyOrderFromPopup() {
+            if (window.currentOrderText) {
+                navigator.clipboard.writeText(window.currentOrderText).then(() => {
+                    alert('✅ Текст заказа скопирован в буфер обмена!\n\nТеперь вы можете вставить его в сообщение на Авито.');
+                }).catch(err => {
+                    alert('❌ Не удалось скопировать текст. Попробуйте выделить и скопировать вручную.');
+                });
+            } else {
+                alert('❌ Ошибка: текст заказа не найден. Пожалуйста, сформируйте заказ заново.');
+            }
+        }
+        
+        // Удаляем старую функцию copyOrder, так как используем новую из всплывающего окна
+        function copyOrder() {
+            copyOrderFromPopup();
+        }
+        
+        // Оставляем функцию confirmOpenAvito для обратной совместимости
+        function confirmOpenAvito() {
+            return confirm('После копирования текста заказа, вы перейдете на Авито, где сможете вставить его в сообщение продавцу. Продолжить?');
+        }
+        
+        // Инициализация
+        document.addEventListener('DOMContentLoaded', () => {
+            animateOnScroll();
+            
+            // Инициализация переключателя веса
+            toggleWeightInput();
+            
+            // Добавление микроразметки для отзывов
+            addReviewsSchema();
+        });
+        
+        // Добавление микроразметки Schema.org для отзывов
+        function addReviewsSchema() {
+            const reviews = [
+                {
+                    "@type": "Review",
+                    "author": "Михаил Новиков",
+                    "datePublished": "2025-10-30",
+                    "reviewBody": "Превосходный быстрый сервис. Вечером написал, установил ТУ – на следующий день уже все выполнено и доставлено. Пластик очень крепкий и надёжный. Рекомендую к сотрудничеству.",
+                    "reviewRating": {
+                        "@type": "Rating",
+                        "ratingValue": "5"
+                    }
+                },
+                {
+                    "@type": "Review",
+                    "author": "Игорь",
+                    "datePublished": "2025-11-18",
+                    "reviewBody": "Сделка состоялась, деталь изготовил быстро, цена гораздо ниже чем у других, рекомендую.",
+                    "reviewRating": {
+                        "@type": "Rating",
+                        "ratingValue": "4.5"
+                    }
+                },
+                {
+                    "@type": "Review",
+                    "author": "Юрий Смирнов",
+                    "datePublished": "2025-12-08",
+                    "reviewBody": "Нужна была деталь для металлоискателя, сделали быстро, пластик надёжный!",
+                    "reviewRating": {
+                        "@type": "Rating",
+                        "ratingValue": "5"
+                    }
+                }
+            ];
+            
+            const reviewSchema = {
+                "@context": "https://schema.org",
+                "@type": "LocalBusiness",
+                "name": "3DPrint СПб",
+                "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingValue": "4.8",
+                    "reviewCount": "3"
+                },
+                "review": reviews
+            };
+            
+            const script = document.createElement('script');
+            script.type = 'application/ld+json';
+            script.text = JSON.stringify(reviewSchema);
+            document.head.appendChild(script);
+        }
+        
+        // Отслеживание событий для аналитики
+        function trackEvent(category, action, label) {
+            if (typeof ym !== 'undefined') {
+                ym(98000000, 'reachGoal', category, {action: action, label: label});
+            }
+            if (typeof gtag !== 'undefined') {
+                gtag('event', action, {
+                    'event_category': category,
+                    'event_label': label
+                });
+            }
+        }
+        
+        // Отслеживание кликов по кнопкам
+        document.querySelectorAll('.cta-button, .telegram-button, .price-button, .action-button').forEach(button => {
+            button.addEventListener('click', function() {
+                const text = this.textContent || this.innerText;
+                trackEvent('button_click', 'click', text);
+            });
+        });
+    </script>
+</body>
+</html>
+```
